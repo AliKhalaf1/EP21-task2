@@ -1,0 +1,1234 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+}
+.clearfix{
+  clear: both;
+}
+/***************************************************************
+********************NAV*****************************************
+***************************************************************/
+nav {
+  height: 65px;
+  width: 100%;
+  border-bottom: 1px solid rgb(219, 229, 230);
+  justify-content: space-around;
+  display: flex;
+  max-width: 1600px;
+  margin: auto;
+}
+/*****Logos**********/
+.logo {
+  font-size: 35px;
+  line-height: 65px;
+}
+.logo img{
+  min-height: 28px;
+
+}
+
+.logo-mobile {
+  font-size: 35px;
+  line-height: 65px;
+  text-align: left;
+  border-right: 1px solid rgb(219, 229, 230);
+  float: left;
+  padding: 0 15px;
+  display: none;
+
+}
+.logo-mobile img{
+  min-height: 28px;
+}
+
+/*******links*******/
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 65px;
+  padding: 0 20px;
+
+}
+
+nav ul li a {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: rgb(28, 32, 34);
+  font-style: italic;
+  font-weight: bold;
+  position:relative;
+  padding-bottom: 6px;
+  font-family: 'Barlow', sans-serif;
+}
+/*******Animation*********/
+
+nav ul li a::after {
+content: '';
+width: 0%;
+height: 3px;
+background-color: red;
+position: absolute;
+bottom: 0%;
+left:50%;
+transition:all .35s ease ;
+}
+nav ul li a:hover::after {
+left: 0%;
+width:100%;
+}
+
+
+/****menu****/
+.checkbtn {
+  font-size: 30px;
+  color: #000;
+  float: right;
+  line-height: 65px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+.checkbtn h1{
+float:left;
+text-transform: uppercase;
+font-size: 14px;
+font-family: 'Barlow', sans-serif;
+padding-right: 10px;
+font-style: italic;
+font-weight: 500;
+text-align: center;
+
+}
+
+
+/*******Details*********/
+
+#github{
+  transition: all .6s ease;
+
+}
+#github:hover{
+  transform: scale(1.09);
+
+}
+#github a:hover{
+  transition: all .6s ease;
+  box-shadow: 0px 10px 20px -10px #000;
+
+}
+#github a::after{
+  display: none;
+
+}
+
+#github a{
+  background-color: #24292e;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  text-transform: none;
+  color:#fff;
+
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+
+}
+#github i{
+padding-left: 5px;
+}
+
+.nav-links span {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: rgb(62, 84, 163);
+  color: rgb(255, 255, 255);
+  font-family: 'Heebo', sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 4px 8px 3px 9px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}/*********************challenge**********************/
+.challenge {
+  border-bottom: 1px solid rgb(219, 229, 230);
+  width: 100%;
+  min-height: 55px;
+  display: flex;
+  max-width: 1600px;
+  margin: auto;
+
+}
+
+.challenge h1 {
+  border-left: 1px solid rgb(219, 229, 230);
+  border-right: 1px solid rgb(219, 229, 230);
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  line-height: 55px;
+  letter-spacing: 1px;
+  margin: auto 0;
+  margin-left: 4%;
+  padding: 0 30px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/***************************************************************
+********************HEADER**************************************
+***************************************************************/
+.header {
+  width: 80%;
+  max-width: 1600px;
+  margin: 54px auto;
+  height: 570px;
+  display: flex;
+  transition: all .7s;
+
+}
+
+/*******************first part**********************/
+.first-part {
+  width: 55%;
+  transition: all .7s;
+
+}
+
+.first-part img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.first-part ul {
+  float: right;
+  width: 100%;
+}
+
+.first-part ul li {
+  display: inline-block;
+  line-height: 30px;
+  transition: all 0.3s ease 0s;
+}
+
+.first-part ul li a {
+  background-color: rgb(219, 229, 230);
+  border-radius: 10rem;
+  color: rgb(153, 153, 153);
+  cursor: pointer;
+  font-family: 'Barlow', sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+
+.first-part ul .active a {
+  background-color: rgb(62, 84, 163);
+  color: rgb(255, 255, 255);
+}
+
+/*******first part animation**********/
+.first-part ul li a:hover {
+  box-shadow: 0px 10px 20px -10px #000;
+}
+
+.first-part ul li:hover {
+  transform: scale(1.03);
+}
+
+/*******************************second part**********************************/
+.second-part {
+  width: 45%;
+  box-sizing: border-box;
+  padding-left: 50px;
+  transition: all .7s;
+
+}
+
+/*****heads*****/
+.container-heads {
+  width: 100%;
+  display: flex;
+}
+
+.heads {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  margin: 0px;
+  display: flex;
+  width: 50%;
+}
+
+.heads h3 {
+  padding-right: 12px;
+  text-transform: uppercase;
+  line-height: 2;
+  font-size: 16px;
+}
+
+.cyan {
+  color: rgb(106, 190, 205);
+}
+
+.blue {
+  color: rgb(62, 84, 163);
+}
+
+.pink {
+  color: rgb(225, 55, 132);
+}
+
+.premuim {
+  width: 100%;
+}
+
+.premuim h3 {
+  line-height: 1;
+  float: right;
+  padding: 5px 9px;
+  letter-spacing: 2px;
+  background-color: rgb(62, 84, 163);
+  color: rgb(255, 255, 255);
+  font-family: 'Heebo', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.second-part h1 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.3;
+  margin: 1rem 0px 2rem;
+}
+
+/**********intermediate*********/
+.intermediate {
+  width: 100%;
+  height: 6px;
+}
+
+.intermediate div {
+  height: 6px;
+  margin-right: 20px;
+  width: 42px;
+  background-color: rgb(253, 206, 129);
+  border-radius: 10rem;
+  display: flex;
+  float: left;
+}
+
+.intermediate .active {
+  background-color: rgb(219, 229, 230);
+}
+
+#yellow-text {
+  width: 60%;
+  color: rgb(253, 206, 129);
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  display: block;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  margin-bottom: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+/******Red button**********/
+.pro-access {
+  align-items: center;
+  background-color: rgb(237, 44, 73);
+  border-radius: 50px;
+  display: inline-flex;
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 1px;
+  padding: 14px 44px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+/***********assets**********/
+.assets {
+  background-color: rgb(240, 244, 244);
+  width: 100%;
+  margin-top: 25px;
+  padding: 25px;
+}
+.assets h2{
+  font-family: 'Heebo', sans-serif;
+  font-size: 14px;
+  padding-bottom: 7px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  }
+}
+.assets ul{
+  padding-left: 5px;
+
+}
+
+.assets ul li{
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 7px;
+  list-style: none;
+}
+
+.assets i{
+padding-right: 10px;
+color: #68e4b1;
+font-size: 13px;
+
+}
+/*****************************************/
+#challenge{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Heebo', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 80px 0px;
+}
+
+/***************************************************************
+********************SUMMARY*************************************
+***************************************************************/
+.summary {
+  display: flex;
+  width: 80%;
+  margin: 60px auto;
+  font-family: 'Heebo', sans-serif;
+  max-width: 1600px;
+  margin: auto;
+  transition: all .7s;
+
+}
+
+.summary p, .summary li {
+  margin: 23px 0px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.summary ul, .summary ol {
+  padding-left: 20px;
+  margin: 20px 0px;
+  font-weight: 400;
+}
+
+.summary ul li {
+  list-style: disc;
+  margin: 5px 0;
+}
+
+.summary ol li {
+  list-style: decimal;
+  margin: 5px 0;
+}
+
+.summary a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.summary a:hover {
+  text-decoration: none;
+}
+
+.summary span {
+  background-color: rgb(219, 229, 230);
+  font-family: monospace;
+  padding: 0px 3px;
+  font-size: 12px
+}
+
+.summary h1 {
+  font-weight: 700;
+  font-family: 'Barlow', sans-serif;
+  font-size: 24px;
+}
+.brief{
+  width: 50%;
+  padding-right: 45px;
+
+}
+.started{
+  width: 50%;
+  padding-left: 45px;
+  transition: all .7s;
+
+}
+
+
+.second-button{
+  max-width: 1400px;
+  width: 80%;
+  margin: auto;
+  transition: all .7s;
+
+}
+
+/************************************************************
+*****************************FAQS****************************
+*************************************************************/
+#faqs{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 130px;
+  margin-bottom: 70px;
+  transition: all .7s;
+
+}
+
+.faqs{
+  width: 100%;
+  min-height:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Heebo', sans-serif;
+  max-width: 1600px;
+  margin: auto;
+  transition: all .7s;
+
+}
+
+.faqs .container{
+  width: 70%;
+  margin: 0 auto;
+  transition: all .7s;
+
+}
+
+.accordian{
+  display: flex;
+  width: 100%;
+
+}
+
+.accordian-flex{
+  padding: 0 25px;
+}
+
+.accordian-item{
+  margin-bottom: 4px;
+  padding: 5px;
+  border-bottom: 2px solid #000;
+
+}
+
+.accordian-link{
+  font-size: 1.6rem;
+  color: #000;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.accordian-link i{
+  color: #000;
+padding: .5rem;
+font-size: 20px;
+}
+
+.accordian-link .fa-minus{
+display: none;
+}
+
+.answer{
+  overflow: hidden;
+  max-height: 0;
+  position: relative;
+  transition: all 1s  ;
+
+}
+
+.answer p{
+padding: 1rem 1rem;
+color: #000;
+font-weight: 400;
+font-size: 16px;
+}
+.answer p a{
+  text-decoration: underline;
+  color: #000;
+}
+.answer p a:hover{
+  text-decoration: none;
+}
+
+.accordian-item:target .answer {
+max-height: 20rem;
+}
+.accordian-item:target .accordian-link .fa-plus {
+display: none;
+}
+.accordian-item:target .accordian-link .fa-minus {
+display: block;
+}
+
+/************************************************************
+*****************************SLACK***************************
+*************************************************************/
+
+.slack {
+  background-color: rgb(62, 84, 163);
+  color: rgb(255, 255, 255);
+  position: relative;
+  text-align: center;
+  margin: 90px auto 0 auto;
+  max-width: 1600px;
+  width: 93%;
+  height: 620px;
+  transition: all .7s ease;
+
+}
+
+
+.slack .container {
+  width: 100%;
+}
+
+.slack .container img {
+  height: 90px;
+  margin-top: 50px
+}
+
+.slack .container h1 {
+  justify-content: center;
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 40px 0;
+}
+
+.slack .container h2 {
+  width: 80%;
+  font-family: 'Barlow', sans-serif;
+  margin: auto;
+  line-height: 1.5;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 100px;
+}
+
+
+
+/*******mail******/
+.slack .container .mail {
+width: 68%;
+display: flex;
+margin: auto;
+justify-content: space-between;
+transition: all .7s ;
+}
+
+.slack .container input {
+  background-color: transparent;
+  border: 1px solid #eee;
+  color: #eee;
+  display: block;
+  font-size: 20px;
+  padding: 10px 10px;
+  width:50%;
+  font-family: 'Heebo', sans-serif;
+  text-align:left;
+  align-items: center;
+
+}
+
+.slack .container button {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(62, 84, 163);
+  cursor: pointer;
+  font-size: 16px;
+  width: 40%;
+  align-items: center;
+  border-radius: 60px;
+  border: 2px solid;
+  font-family: 'Barlow', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+
+.slack .container button:hover{
+  transform: scale(1.015);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.3rem 1rem;
+}
+
+
+/************************************************************
+*****************************SUBSCRIBE***********************
+*************************************************************/
+
+.subscribe{
+width: 100%;
+border-bottom: 1px solid #000;
+background-image: url(images/bg-newsletter.svg);
+background-position: right;
+background-repeat: no-repeat;
+height: 600px;
+margin: auto;
+display: flex;
+max-width: 1600px;
+
+}
+
+.subscribe .container{
+  width: 50%;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+.subscribe  img{
+padding: 50px 200px 200px 150px;
+
+}
+.subscribe h1 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+  .subscribe h2{
+  font-family: 'Barlow', sans-serif;
+  margin:10px 0;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+
+/****CHECKBOX****/
+
+.subscribe .checkbox{
+display: flex;
+width: 100%;
+margin-bottom: 15px;
+}
+
+#checkbox{
+width: 25px;
+-webkit-appearance:none;
+height: 25px;
+background-size: 14px;
+border: 3px solid rgb(62, 84, 163);
+border-radius: 3px;
+}
+
+#checkbox:checked{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgb(62, 84, 163);
+  background-image: url(images/icon-checkmark.svg);
+
+}
+
+.subscribe .checkbox label{
+padding-left: 20px;
+font-size: 16px;
+height: 100%;
+margin: auto 0;
+color: #000;
+font-weight: 400;
+font-family: 'Heebo', sans-serif;
+
+}
+
+/*****MAIL******/
+
+.subscribe .mail{
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+}
+
+.subscribe .mail input{
+  background-color: transparent;
+  border: 1px solid rgb(118, 118, 118);
+  color:  rgb(195, 195, 195);
+  font-size: 20px;
+  padding: 10px 180px 10px 10px;
+  font-family: 'Heebo', sans-serif;
+  text-align:left;
+}
+
+.subscribe .mail button{
+  align-items: center;
+  background-color: rgb(237, 44, 73);
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 1px;
+  padding: 14px 44px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+
+/************************************************************
+****************************FOOTER***************************
+*************************************************************/
+
+.footer{
+  display: flex;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width:1600px;
+  height: 300px;
+  padding-top: 70px;
+}
+
+.footer  h1{
+  font-family: 'Heebo', sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer  h2{
+padding-top: 30px;
+padding-right: 40px;
+color: #000;
+font-weight: 400;
+font-size: 14px;
+font-family: 'Heebo', sans-serif;
+}
+/******main*****/
+.footer .main-container{
+display: flex;
+width: 60%;
+}
+
+.footer .first-container{
+  padding: 0 10%;
+  width: 70%;
+}
+
+
+.footer .second-container{
+  padding-left: 40px;
+}
+/*****LINKS****/
+.footer .second-container .links {
+  position:relative;
+  padding-top: 15px;
+}
+.footer .second-container .links a{
+display: flex;
+}
+.footer .second-container .links h5{
+  display: flex;
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Heebo', sans-serif;
+  padding: 3px 0;
+  position:relative;
+}
+/*****ANIMATION*****/
+.footer .second-container .links h5::after{
+content: '';
+width: 100%;
+height: 2px;
+background-color: red;
+position: absolute;
+bottom: 0%;
+left:0%;
+transition:all .3s ease ;
+
+}
+
+.footer .second-container .links h5:hover::after {
+  left: 50%;
+  width: 0%;
+}
+
+/******icons*****/
+
+.footer .third-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+.footer .third-container ul {
+ position: relative;
+ display: flex;
+  padding-right: 80px;
+}
+.footer .third-container ul li{
+ position: relative;
+ list-style: none;
+
+}
+.footer .third-container ul li a i{
+position: relative;
+width: 50px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 12px;
+text-decoration: none;
+font-size :20px;
+border-radius: 50%;
+transition: all .6s ease;
+}
+.footer .third-container ul li i:hover{
+transform: scale(1.09);
+box-shadow: 0px 3px 10px -4px #000;
+}
+
+.footer .third-container .fa-twitter {
+  border: 2px solid rgb(28, 160, 242);
+  color: rgb(28, 160, 242);
+}
+.footer .third-container .fa-linkedin-in {
+  border: 2px solid rgb(41, 103, 179);
+  color: rgb(41, 103, 179);
+}
+.footer .third-container .fa-facebook-f {
+  border: 2px solid rgb(59, 88, 151);
+  color: rgb(59, 88, 151);
+}
+
+/************************************************************
+****************************END******************************
+*************************************************************/
+.end{
+  width: 100%;
+  padding: 0 5% 0 10%;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.end .container{
+  text-align: right;
+}
+
+.end h3, .end a{
+  color: rgb(153, 153, 153);
+font-size: 12px;
+font-weight:400;
+font-family: 'Heebo', sans-serif;
+}
+
+
+.end a{
+  padding: 0 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+/*****header****/
+.header{
+  width:95%;
+}
+.assets ul li{
+font-size: 13px;
+}
+
+/****summary****/
+.summary {
+  display: flex;
+  width: 95%;
+}
+
+/****faqs****/
+.faqs .container{
+  width: 90%;
+}
+.slack .container .mail {
+width: 80%;
+}
+
+/****subscribe****/
+.subscribe{
+background-image: none;
+height: auto;
+}
+.subscribe  img{
+display: none;
+}
+.subscribe  .container{
+width: 90%;
+margin:60px auto;
+padding: 0
+}
+
+/***footer***/
+.footer{
+  display: block;
+  height: auto;
+}
+.footer .main-container{
+display: block;
+padding: 0;
+width: 100%;
+}
+.footer .main-container .first-container{
+padding: 0;
+padding-left: 40px;
+margin-bottom: 20px;
+}
+.footer .main-container .second-container{
+  margin-bottom: 20px;
+}
+.footer .third-container ul li a i{
+width: 40px;
+height: 40px;
+margin: 10 12px;
+font-size :18px;
+}
+.footer .third-container ul {
+margin-bottom: 40px;
+}
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  /*****menu***/
+  .checkbtn {
+    display: block;
+  }
+
+    nav ul {
+    position: absolute;
+    width: 100%;
+    background-color: #fafafa;
+    top: 65px;
+    left: -100%;
+    text-align: left;
+  }
+
+   nav ul li {
+    display: block;
+    line-height: 50px;
+    border-bottom: 1px solid rgb(219, 229, 230);
+
+  }
+
+   nav ul li a {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    padding-left: 10px;
+  }
+   nav ul li a::after {
+    display: none;
+  }
+
+  #github a{
+    color:#fff;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(28, 32, 34);
+    background-color: inherit;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
+  #github:hover{
+    transform: scale(1);
+
+  }
+  #github a:hover{
+    transition: none;
+    box-shadow: none;
+
+  }
+
+
+  #check:checked~ul {
+    left: 0;
+  }
+  nav {
+    display: block;
+  }
+
+/****header****/
+.first-part{
+  width:45%;
+}
+.second-part{
+  width:55%;
+}
+
+/****slack****/
+.slack .container h2 {
+  width: 90%;
+  font-size: 21px;
+}
+.slack .container .mail {
+display: block;
+justify-content: center;
+width:100%;
+}
+.slack .container .mail input{
+margin: auto;
+margin-bottom: 10px;
+width: 65%;
+}
+.slack .container .mail button{
+padding: 12px 0;
+}
+
+}
+
+@media (max-width: 770px) {
+  /*****nav****/
+.logo{
+  display: none;
+}
+.logo-mobile{
+  display:block;
+}
+/*****header*****/
+.header{
+display: block;
+height:auto;
+}
+.first-part{
+  width:95%;
+  margin:40px auto;
+}
+.second-part{
+  width:95%;
+  padding: 0;
+  margin:auto
+}
+#yellow-text {
+  width:50%;
+}
+/********Summary*****/
+.summary{
+  display: block;
+  width: 100%
+}
+
+.started,.brief {
+  width: 95%;
+  padding: 20px 0;
+  margin: auto;
+}
+
+/****faqs****/
+
+.accordian{
+display: block;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
