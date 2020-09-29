@@ -378,8 +378,15 @@ padding-left: 5px;
   transition: all 0.3s ease 0s;
   color: rgb(255, 255, 255);
   margin: 0;
+  cursor: pointer;
+  transition: all .6s;
 }
 
+.pro-access:hover{
+transform: scale(1.08);
+box-shadow: 0px 10px 10px -10px #000;
+
+}
 /***********assets**********/
 .assets {
   background-color: rgb(240, 244, 244);
@@ -828,6 +835,12 @@ font-family: 'Heebo', sans-serif;
   transition: all 0.3s ease 0s;
   color: rgb(255, 255, 255);
   border: none;
+  transition: .6s all;
+  cursor:pointer;
+}
+.subscribe .mail button:hover{
+transform: scale(1.08);
+box-shadow: 0px 10px 10px -10px #000;
 }
 
 
