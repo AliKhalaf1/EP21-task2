@@ -816,6 +816,7 @@ font-family: 'Heebo', sans-serif;
   padding: 10px 180px 10px 10px;
   font-family: 'Heebo', sans-serif;
   text-align:left;
+
 }
 
 .subscribe .mail button{
@@ -1062,7 +1063,15 @@ width: 90%;
 margin:60px auto;
 padding: 0
 }
-
+.subscribe .mail input{
+margin: auto;
+width: 80%;
+padding: 7px 0;
+}
+.subscribe .mail button{
+padding: 10px 20px;
+margin-left: 10px;
+}
 /***footer***/
 .footer{
   display: block;
@@ -1080,6 +1089,13 @@ margin-bottom: 20px;
 }
 .footer .main-container .second-container{
   margin-bottom: 20px;
+}
+.footer .third-container{
+width: 100%;
+position: relative;
+justify-content:flex-start;
+padding-left: 40px;
+
 }
 .footer .third-container ul li a i{
 width: 40px;
